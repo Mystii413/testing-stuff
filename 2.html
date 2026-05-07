@@ -6,30 +6,17 @@
     <title>Hi</title>
   </head>
   <body>
-    <p><a href="index.html">Home</a></p>
-    <h1>Fortnite</h1>
-    <img src="./images/incible.png" width="400" alt="invulnerable standing" />
-    <img src="./images/incinbiel2.png" width="400" alt="invulnerable shocked" />
-    <img src="./images/incinble.png" width="400" alt="invulnerable punching" />
-    <img
-      src="./images/iniclbe.png"
-      width="400"
-      alt="invulnerable standing on rane"
-    />
-    <img src="./images/invinc1.png" width="400" alt="invulnerable smileing" />
-    <p>
-      This is a cool
-      <a
-        href="https://www.amazon.com/INVINCIBLE-SEASON-1/dp/B08WJN83XZ"
-        target="_blank"
-        >link</a
-      >
-    </p>
-    <p>
-      <a
-        href="mailto:invulnerablebestfriend@email.com?subject=Invulnerable did it again&body=this person is great!"
-        >Email me cuh invulnerablebestfriend@email.com</a
-      >
-    </p>
+    <h1 id="counter">Paperclips: </h1>
+    <button id="clicker">Click me</button>
+      <script>
+          let count = 0;
+            display = document.getByElementId('counter');
+            button = document.getByElementId('clicker');
+
+            button.onclick = function() {
+                count += 1;
+                display.textContent = count;
+            };
+      </script>
   </body>
 </html>
