@@ -6,17 +6,21 @@
     <title>Hi</title>
   </head>
   <body>
-    <h1 id="counter">Paperclips: </h1>
+    <h1 id="display">0</h1>
     <button id="clicker">Click me</button>
       <script>
-          let count = 0;
-            display = document.getByElementId('counter');
-            button = document.getByElementId('clicker');
-
-            button.onclick = function() {
-                count += 1;
-                display.textContent = count;
-            };
+        // Step 1: Initialize the count variable
+        let count = 0;
+        
+        // Step 2: Select the HTML elements
+        const button = document.getElementById("clicker");
+        const display = document.getElementById("display");
+        
+        // Step 3: Add the click event listener
+        button.addEventListener("click", () => {
+            count++; // Increment the count
+            display.textContent = count; // Update the display
+        });
       </script>
   </body>
 </html>
